@@ -1,0 +1,78 @@
+/* CSS HEX */
+:root {
+/* CSS HEX */
+--dark-purple: #36213eff;
+--english-violet: #554971ff;
+--slate-gray: #63768dff;
+--non-photo-blue: #8ac6d0ff;
+--non-photo-blue-2: #b8f3ffff;
+}
+
+/*
+GLOBAL
+*/
+
+body{
+    background-color: var(--slate-gray);
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+a:link{
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    gap: 0.1rem;
+}
+a:hover,
+a:visited:hover {
+    color: var(--english-violet);
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:visited{
+    color: white;
+}
+
+/*
+HOME PAGE
+*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 100vw;
+    gap: 5vw;
+    z-index: 1;
+    background-image: linear-gradient( var(--non-photo-blue), var(--slate-gray));
+
+    font-size: 30px;   
+}
+.name{
+    margin-left: 1.5rem;
+    color: var(--dark-purple);
+}
+.items{
+    margin-left: auto;
+    margin-right: 1rem;
+
+    gap: 30px;
+}
+.items > a
+{
+    margin-inline: 0.5rem;
+}
+
+
+
+
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+
+
