@@ -51,6 +51,7 @@ h1{
 
     text-shadow: 2px 2px 0px var(--english-violet);
     z-index: 1;
+    
 }
 h2{
     color: var(--english-violet);
@@ -60,6 +61,22 @@ h2{
     margin-block: 1rem;
     size:2vw;
 
+}
+h3 {
+  size: 2vw;
+  text-align:center;
+  text-shadow: 2px 2px 0px var(--non-photo-blue-2);
+  margin-block: 0.5vh;
+  color: white;
+}
+ul{
+  size: 1.3vw;
+  color: white;
+  margin-block:3vh;
+  margin-inline:5vh;
+}
+li{
+  font-size: 1.3vw;
 }
 button{
     margin-bottom:1rem;
@@ -73,6 +90,10 @@ button{
 .mybutton:hover {
     background-color: var(--dark-purple);
     color: white; /* or any color you prefer */
+}
+p {
+  color: white;
+  font-size: 1.0vw;
 }
 
 /*
@@ -209,7 +230,7 @@ img.example
     margin-block:4rem;
     position: relative;
     width: 100%;
-    height: 30vh; /* Set the desired height */
+    height: 50vh; /* Set the desired height */
     overflow: hidden;
 }
 
@@ -303,36 +324,95 @@ img.example
     display: grid;
     
     margin-inline: 5vw;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25vh, 1fr));
     grid-auto-flow: dense;
     gap: 1vw; 
   }
   .artitem {
     position: relative;
+    display: inline-block;
 }
-  .artitem > img {
+  .artitem > a > img {
     
     width: 100%;
     height: auto;
     display: block;
+    opacity: 1.0;
+    transition: 1.0s;
+  }
+
+  .artitem > a > img:hover {
+    
+    opacity: 0.5;
+
+    transition: 1.0s;
+  }
+
+  
+
+  .artitem .label {
+
+    
+    margin-top: 0.5vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
 
-  .artitem .innertext {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease-in-out;
+  /* game centric pages */
+
+  .section{
+    margin-inline: 10vw;
+    display: flex;
+  }
+  .section > a{
+    color: var(--non-photo-blue-2);
+  }
+  .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  }
+  .linkbutton {
+    border-color: var(--non-photo-blue-2);
+    color: var(--dark-blue);
+    size: 3vh;
+    font-size: 4vh;
+    padding: 2vh;
+    background-color: var(--non-photo-blue-2);;
+  
 }
 
-.artitem:hover .innertext {
-    visibility: visible;
-    opacity: 1;
+.linkbutton:hover {
+    background-color: var(--dark-purple);
+    color: white; /* or any color you prefer */
+    
 }
+.text{
+  
+  
+  flex: 0.8;
+  padding: 4vh;
+  
+  
+  
+}
+
+  .section img {
+    flex: 0.8;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    padding: 4vh;
+  }
+
+
+
 
 
