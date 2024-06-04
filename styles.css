@@ -8,6 +8,7 @@
 --non-photo-blue-2: #b8f3ffff;
 --dark-blue: #04264e; 
 --light-blue:#daf5f7;
+--light-orange:#f5cc90;
 }
 
 /*
@@ -33,12 +34,14 @@ a:link{
     color: white;
     text-decoration: none;
     gap: 0.1rem;
+    transition:0.2s;
 }
 a:hover,
 a:visited:hover {
     color: var(--english-violet);
     background-color: transparent;
     text-decoration: none;
+    transition:0.2s;
   }
 a:visited{
     color: white;
@@ -49,7 +52,7 @@ h1{
     color:var(--non-photo-blue-2);
     margin-block:2rem;
 
-    text-shadow: 2px 2px 0px var(--english-violet);
+    text-shadow: 3px 3px 0px var(--dark-blue);
     z-index: 1;
     
 }
@@ -65,7 +68,7 @@ h2{
 h3 {
   size: 2vw;
   text-align:center;
-  text-shadow: 2px 2px 0px var(--non-photo-blue-2);
+  text-shadow: 2px 2px 0px var(--dark-blue);
   margin-block: 0.5vh;
   color: white;
 }
@@ -367,16 +370,17 @@ img.example
   .section{
     margin-inline: 10vw;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-block: 5vh;
   }
-  .section > a{
+  .section a{
     color: var(--non-photo-blue-2);
   }
   .link{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
     
   }
   .linkbutton {
@@ -385,23 +389,16 @@ img.example
     size: 3vh;
     font-size: 4vh;
     padding: 2vh;
-    background-color: var(--non-photo-blue-2);;
-  
-}
-
+    background-color: var(--light-orange);
+  }
 .linkbutton:hover {
     background-color: var(--dark-purple);
     color: white; /* or any color you prefer */
     
 }
-.text{
-  
-  
+.text{ 
   flex: 0.8;
   padding: 4vh;
-  
-  
-  
 }
 
   .section img {
@@ -410,6 +407,10 @@ img.example
     height: auto;
     object-fit: contain;
     padding: 4vh;
+  }
+  .gamelabel{
+    color: var(--light-orange);
+    display:inline;
   }
 
 
