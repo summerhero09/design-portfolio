@@ -97,6 +97,7 @@ button{
 p {
   color: white;
   font-size: 1.0vw;
+  
 }
 
 /*
@@ -411,6 +412,9 @@ img.example
   .gamelabel{
     color: var(--light-orange);
     display:inline;
+  }
+  .section p{
+    margin-block: 3vh;
   }
 
 
