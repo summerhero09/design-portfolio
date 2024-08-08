@@ -416,6 +416,18 @@ img.example
   .section p{
     margin-block: 3vh;
   }
+  .red{
+    color: #e07c75;
+  }
+  .blue{
+    color: #9fc3e8;
+  }
+  .yellow{
+    color: hsl(61, 60%, 60%);
+  }
+  .green{
+    color: #5dd792;
+  }
 
 
 
