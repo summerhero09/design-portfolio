@@ -409,6 +409,13 @@ img.example
     object-fit: contain;
     padding: 4vh;
   }
+  .section video {
+    flex: 0.8;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    padding: 4vh;
+  }
   .gamelabel{
     color: var(--light-orange);
     display:inline;
