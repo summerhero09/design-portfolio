@@ -47,10 +47,10 @@ a:visited{
     color: white;
 }
 h1{
-    size:3vw;
+    size:5vmin;
     text-align:center;
     color:var(--non-photo-blue-2);
-    margin-block:2rem;
+    margin-block:5vh;
 
     text-shadow: 3px 3px 0px var(--dark-blue);
     z-index: 1;
@@ -61,25 +61,25 @@ h2{
     text-align:center;
     text-shadow: 2px 2px 0px var(--non-photo-blue);
     z-index: 1;
-    margin-block: 1rem;
-    size:2vw;
+    margin-block: 2vh;
+    size:4vmin;
 
 }
 h3 {
-  size: 2vw;
+  size: 3vmin;
   text-align:center;
   text-shadow: 2px 2px 0px var(--dark-blue);
   margin-bottom: 2vh;
   color: white;
 }
 ul{
-  size: 1.3vw;
+  size: 1.3vmin;
   color: white;
   margin-block:3vh;
-  margin-inline:5vh;
+  margin-inline:5vw;
 }
 li{
-  font-size: 1.3vw;
+  font-size: 2.5vmin;
 }
 button{
     margin-bottom:1rem;
@@ -96,7 +96,7 @@ button{
 }
 p {
   color: white;
-  font-size: 1.2vw;
+  font-size: 2.0vmin; 
   
 }
 
@@ -110,17 +110,23 @@ NAVBAR
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 12vh;
+    justify-content: space-between;
+    height: 90px; /* Keep height flexible */; /*height was 12vh, width 100vw */
+   
     width: 100vw;
-    gap: 5vw;
+    gap: 3vw;
     z-index: 1;
     background-image: linear-gradient(var(--non-photo-blue-2), var(--dark-blue) );
 
+    font-size: calc(1.2vh + 1.0vw); /* Font size proportional to navbar height */
     
 
-    font-size: 2vw;   
+    
+
+    
 }
+
+
 .name{
     margin-left: 1.5rem;
     color: var(--non-photo-blue-2);
@@ -134,8 +140,11 @@ NAVBAR
 }
 .items > a
 {
+  
     margin-inline: 0.5rem;
 }
+
+
 
 /*homepage*/
 
@@ -297,7 +306,10 @@ img.example
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
     h1, h2 {
-      font-size: 2.5vw;
+      font-size: 4.5vmin;
+    }
+    h3 {
+      font-size: 3vmin;
     }
    
   }
@@ -316,11 +328,14 @@ img.example
   
   @media (max-width: 480px) {
     h1, h2 {
-      font-size: 4vw;
+      font-size: 3.5vmin;
     }
   
     .main, .inspirations {
       margin-inline: 1rem;
+    }
+    h3 {
+      font-size: 1vmin;
     }
   }
 
@@ -407,7 +422,7 @@ img.example
 
   .section img {
     flex: 0.8;
-    width: 40%;
+    width: 50%;
     height: auto;
     object-fit: contain;
     padding: 4vh;
