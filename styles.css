@@ -20,9 +20,10 @@ body{
     font-family: "Radio Canada Big", sans-serif;
     background-image:url(images/index.png);
 
-    background-size: cover;
-    background-repeat:no-repeat;
-	background-attachment: fixed;
+    background-size: cover; /* Scales the image to cover the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
 
     margin:auto;
 }
@@ -66,10 +67,10 @@ h2{
 
 }
 h3 {
-  size: 3vmin;
+  size: 5vmin;
   text-align:center;
   text-shadow: 2px 2px 0px var(--dark-blue);
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   color: white;
 }
 ul{
@@ -96,7 +97,7 @@ button{
 }
 p {
   color: white;
-  font-size: 2.0vmin; 
+  font-size: 2.5vmin; 
   
 }
 
@@ -111,8 +112,7 @@ NAVBAR
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 90px; /* Keep height flexible */; /*height was 12vh, width 100vw */
-   
+    height: 90px; 
     width: 100vw;
     gap: 3vw;
     z-index: 1;
@@ -125,6 +125,16 @@ NAVBAR
 
     
 }
+@media (max-width: 600px) {
+  .navbar {
+    gap: 1vw;
+  }
+  .items{
+    padding: 1px;
+  }
+
+ 
+}
 
 
 .name{
@@ -135,6 +145,7 @@ NAVBAR
 .items{
     margin-left: auto;
     margin-right: 1rem;
+    
 
     gap: 30px;
 }
@@ -182,7 +193,7 @@ NAVBAR
 .intro{
     margin-top: 2rem;
     padding:1rem;
-    font-size:1.5vw;
+    font-size:3.0vmin;
     text-align: center;
 }
 
@@ -298,9 +309,9 @@ img.example
    
 }
 .item > p{
-    font-size: 1.5vw;
+    font-size: 2.5vmin;
     color:var(--dark-purple);
-    margin-bottom:1rem;
+    margin-bottom:3vh;
 }
 
 /* MEDIA QUERIES */
@@ -309,7 +320,7 @@ img.example
       font-size: 4.5vmin;
     }
     h3 {
-      font-size: 3vmin;
+      font-size: 4vmin;
     }
    
   }
@@ -335,8 +346,18 @@ img.example
       margin-inline: 1rem;
     }
     h3 {
-      font-size: 1vmin;
+      font-size: 3vmin;
     }
+
+    .section img {
+     
+  
+      
+      
+      min-width: 100px; /* Set a minimum width to avoid becoming too small */
+    }
+   
+      
   }
 
   /* ART */
@@ -392,6 +413,9 @@ img.example
     align-items: flex-start;
     justify-content: space-between;
     margin-block: 1vh;
+
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    
   }
   .section a{
     color: var(--non-photo-blue-2);
@@ -426,13 +450,28 @@ img.example
     height: auto;
     object-fit: contain;
     padding: 4vh;
+
+    
+    
+    
+    min-width: 80vmin; /* Set a minimum width to avoid becoming too small */
   }
+  /*@media (max-width: 500px) { 
+    .section img {
+      min-width: 80px; /* Set a minimum width to avoid becoming too small */
+    }
+   
+      
+  }*/
   .section video {
     flex: 0.8;
     width: 40%;
     height: auto;
     object-fit: contain;
     padding: 4vh;
+
+    min-width: 300px;
+   
   }
   .gamelabel{
     color: var(--light-orange);
