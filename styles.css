@@ -73,6 +73,14 @@ h3 {
   margin-bottom: 1vh;
   color: white;
 }
+
+h4 {
+  size: 3vmin;
+  text-align:center;
+  text-shadow: 2px 2px 0px var(--dark-blue);
+  margin-bottom: 1vh;
+  color: white;
+}
 ul{
   size: 1.3vmin;
   color: white;
@@ -352,7 +360,10 @@ img.example
     .section img {
      
   
-      
+      flex: 0.8;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
       
       min-width: 100px; /* Set a minimum width to avoid becoming too small */
     }
@@ -469,7 +480,8 @@ img.example
     height: auto;
     object-fit: contain;
     padding: 4vh;
-
+    margin: 0 auto; /* Center the video */
+    display: block; /* Ensure it's treated as a block-level element */
     min-width: 300px;
    
   }
