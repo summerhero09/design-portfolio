@@ -144,7 +144,7 @@ NAVBAR
 }
 
 
-.name{
+.name > a{
     margin-left: 2vw;
     color: var(--non-photo-blue-2);
     
