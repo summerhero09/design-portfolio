@@ -149,6 +149,7 @@ NAVBAR
     gap: 0;
   }
   .items{
+    margin-left: 2vw;
     gap:0.3vw;
   }
 
