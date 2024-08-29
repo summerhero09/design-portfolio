@@ -19,7 +19,7 @@ GLOBAL
 body{
     /*background-color: var(--dark-blue);*/
     font-family: "Radio Canada Big", sans-serif;
-    background-image:url(images/index.jpg);
+    background-image:url(images/index.webp);
 
     background-size: cover; /* Scales the image to cover the entire viewport */
     background-position: center; /* Centers the image */
@@ -272,6 +272,31 @@ img.example
 }
 
 /*Games Page*/
+
+.process{
+
+  
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.8;
+    padding: 1vh;
+    
+
+}
+
+.processlabel{
+
+  display: inline-block;
+  margin-top: 0.3vh; /* Adds space between the image and label */
+  padding-inline: 0.2vmin;
+  border-radius: 25px;
+  font-size: 2vmin;
+  color: white;
+  
+  text-align: center;
+
+}
 
 .banner {
     margin-bottom:10vh;
