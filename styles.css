@@ -19,7 +19,7 @@ GLOBAL
 body{
     /*background-color: var(--dark-blue);*/
     font-family: "Radio Canada Big", sans-serif;
-    background-image:url(images/index.png);
+    background-image:url(images/index.jpg);
 
     background-size: cover; /* Scales the image to cover the entire viewport */
     background-position: center; /* Centers the image */
