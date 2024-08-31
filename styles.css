@@ -147,13 +147,19 @@ NAVBAR
 @media (max-width: 600px) {
   .navbar {
     gap: 0;
-    font-size: calc(1.2vh + 0.1vw);
-    height: 8vh;
+    font-size: calc(1.3vh + 0.5vw);
+    height: 10vh;
   }
   .items{
     margin-left: 2vw;
-    gap:0.3vw;
+    gap:0vw;
     
+  }
+  a:link{
+
+    padding: 0.1vw;
+    gap: 0vw;
+
   }
   .section video {
     min-width: 10vmin;
@@ -389,14 +395,23 @@ img.example
   
   
   @media (max-width: 480px) {
-    h1, h2 {
-      font-size: 3.5vmin;
+    h1 {
+      font-size: 4.5vmin;
+    }
+
+    h2 {
+
+      font-size: 4 vmin;
+
     }
   
     .main, .inspirations {
       margin-inline: 1rem;
     }
     h3 {
+      font-size: 3.5vmin;
+    }
+    p {
       font-size: 3vmin;
     }
 
