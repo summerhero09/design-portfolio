@@ -137,7 +137,7 @@ NAVBAR
     z-index: 1;
     background-image: linear-gradient(var(--non-photo-blue-2), var(--dark-blue) );
 
-    font-size: calc(1.2vh + 1.0vw); /* Font size proportional to navbar height */
+    font-size: calc(1.2vh + 0.8vw); /* Font size proportional to navbar height */
     
 
     
@@ -147,10 +147,16 @@ NAVBAR
 @media (max-width: 600px) {
   .navbar {
     gap: 0;
+    font-size: calc(1.2vh + 0.1vw);
+    height: 8vh;
   }
   .items{
     margin-left: 2vw;
     gap:0.3vw;
+    
+  }
+  .section video {
+    min-width: 10vmin;
   }
 
 }
