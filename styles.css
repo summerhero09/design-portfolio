@@ -144,28 +144,7 @@ NAVBAR
 
     
 }
-@media (max-width: 600px) {
-  .navbar {
-    gap: 0;
-    font-size: calc(1.3vh + 0.5vw);
-    height: 10vh;
-  }
-  .items{
-    margin-left: 2vw;
-    gap:0vw;
-    
-  }
-  a:link{
 
-    padding: 0.1vw;
-    gap: 0vw;
-
-  }
-  .section video {
-    min-width: 10vmin;
-  }
-
-}
 
 
 .name > a{
@@ -412,7 +391,7 @@ img.example
       font-size: 3.5vmin;
     }
     p {
-      font-size: 3vmin;
+      font-size: 2.5vmin;
     }
 
     .section img {
@@ -427,6 +406,29 @@ img.example
     }
    
       
+  }
+
+  @media (max-width: 600px) {
+    .navbar {
+      gap: 0;
+      font-size: calc(1.3vh + 0.5vw);
+      height: 10vh;
+    }
+    .items{
+      margin-left: 2vw;
+      gap:0vw;
+      
+    }
+    a:link{
+  
+      padding: 0.1vw;
+      gap: 0vw;
+  
+    }
+    .section video {
+      min-width: 10vmin;
+    }
+  
   }
 
   /* ART */
