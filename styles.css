@@ -420,7 +420,7 @@ img.example
   @media (max-width: 600px) {
     .navbar {
       gap: 0;
-      font-size: calc(1.3vh + 0.5vw);
+      font-size: calc(1.3vh + 0.3vw);
       height: 10vh;
     }
     .items{
