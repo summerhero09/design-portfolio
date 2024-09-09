@@ -344,8 +344,9 @@ img.example
    margin-bottom: 2vh;
    
 }
+
 .item > p{
-    font-size: 2.5vmin;
+    font-size: 3.5vmin;
     color:var(--dark-purple);
     margin-bottom:3vh;
 }
@@ -398,6 +399,13 @@ img.example
     }
     p {
       font-size: 3.5vmin;
+    }
+    .item > p{
+      
+        font-size: 3.5 vmin;
+    }
+    .item > h2{
+      font-size: 5 vmin;
     }
     li {
       font-size: 3.5vmin;
