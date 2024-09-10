@@ -20,17 +20,33 @@
 
     <title>Pokémon Coda | Chris Shia Portfolio </title>
     <meta name="generator" content="BBEdit 11.6" />
-</head>
+    <script>
+        function toggleMenu() {
+        const items = document.querySelector('.items');
+        const icon = document.querySelector('.icon');
+        items.classList.toggle('show');
+        icon.classList.toggle('change');
+    }
+    
+    </script>
+    </head>
 
 <body>
 
 
 
     <div class="navbar">
-         <div class = name>
+        <div class="name">
             <a href="index.html">Chris Shia | Portfolio</a>
         </div>
-        <div class = items>
+    
+        <div class="icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="items">
             <a href="index.html">Home</a>
             <a href="games.html">Games</a>
             <a href="art.html">Art/Graphic Design</a>
@@ -39,6 +55,7 @@
             <a href="resume.pdf">Resume</a>
         </div>
     </div>
+    
 
    
     <div class="banner">

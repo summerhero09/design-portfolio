@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles.css" rel="stylesheet">
+<script>
+    function toggleMenu() {
+    const items = document.querySelector('.items');
+    const icon = document.querySelector('.icon');
+    items.classList.toggle('show');
+    icon.classList.toggle('change');
+}
+
+</script>
+</head>
+
+<div class="navbar">
+    <div class="name">
+        <a href="index.html">Chris Shia | Portfolio</a>
+    </div>
+
+    <div class="icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="items">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="art.html">Art/Graphic Design</a>
+        <a href="writing.html">Writing</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.pdf">Resume</a>
+    </div>
+</div>
+
+
+
+
+
+<!-- Top Navigation Menu 
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) 
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+ "Hamburger menu" / "Bar icon" to toggle the navigation links 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+-->

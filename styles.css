@@ -138,9 +138,6 @@ NAVBAR
     background-image: linear-gradient(var(--non-photo-blue-2), var(--dark-blue) );
 
     font-size: calc(1.2vh + 0.8vw); /* Font size proportional to navbar height */
-    
-
-    
 
     
 }
@@ -156,7 +153,12 @@ NAVBAR
     margin-left: auto;
     margin-right: 2vw;
     gap: 1vw;
+
+    /**/
     
+    display: flex;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
 
     
 }
@@ -164,6 +166,97 @@ NAVBAR
 {
   
     margin-inline: 0.5vw;
+}
+
+.icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 2vw;
+}
+
+.icon span {
+  width: 10vw;
+  height: 0.8vh;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    gap: 0;
+    font-size: calc(1.3vh + 0.3vw);
+    height: 10vh;
+
+   
+  }
+  .name {
+    font-size: calc(1.3vh + 0.8vw);
+  }
+  /*
+  .items{
+    margin-left: 2vw;
+    gap:0vw;
+
+    
+    
+  }*/
+
+  .items {
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    max-height: 0;
+
+    background-color: var(--dark-blue) ;
+
+}
+
+.items.show {
+  max-height: 100vh;
+}
+
+.icon {
+  display: flex;
+  margin-right: 5vw;
+}
+
+.items > a {
+  padding: 1.5vh 2vw;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  
+}
+
+/*
+  
+  a:link{
+
+    padding: 0vw;
+    gap: 0vw;
+
+  }*/
+  .section video {
+    min-width: 10vmin;
+  }
+
+  /* Transform the icon to a cross when clicked */
+.icon.change span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.icon.change span:nth-child(2) {
+  opacity: 0;
+}
+
+.icon.change span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 }
 
 
@@ -424,29 +517,13 @@ img.example
    
       
   }
+  
 
-  @media (max-width: 600px) {
-    .navbar {
-      gap: 0;
-      font-size: calc(1.3vh + 0.3vw);
-      height: 10vh;
-    }
-    .items{
-      margin-left: 2vw;
-      gap:0vw;
-      
-    }
-    a:link{
   
-      padding: 0vw;
-      gap: 0vw;
-  
-    }
-    .section video {
-      min-width: 10vmin;
-    }
-  
-  }
+
+
+
+
 
   /* ART */
 
