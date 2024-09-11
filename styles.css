@@ -439,7 +439,7 @@ img.example
 }
 
 .item > p{
-    font-size: 3.5vmin;
+    font-size: 2.5vmin;
     color:var(--dark-purple);
     margin-bottom:3vh;
 }
