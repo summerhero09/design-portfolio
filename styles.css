@@ -257,6 +257,8 @@ NAVBAR
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+
+
 }
 
 
@@ -463,9 +465,12 @@ img.example
   
   @media (max-width: 768px) {
  
-    .main, .inspirations {
+    .main{
       flex-direction: column;
       margin-inline: 2rem;
+    }
+    .inspirations{
+      grid-template-columns: 1fr;
     }
     .gallery {
       grid-template-columns: 1fr;
@@ -475,7 +480,9 @@ img.example
       grid-template-columns: 1fr;
     margin-inline: 5vw;
     gap: 1vw;
+    justify-content: center;
     }
+    
 }
   
   
@@ -490,7 +497,7 @@ img.example
 
     }
   
-    .main, .inspirations {
+    .main{
       margin-inline: 1rem;
     }
     h3 {
