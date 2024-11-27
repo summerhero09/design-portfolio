@@ -27,6 +27,8 @@ body{
     background-attachment: fixed; /* Keeps the background fixed when scrolling */
 
     margin:auto;
+    
+    
 }
 
 
@@ -622,13 +624,15 @@ img.example
     display: block;
     opacity: 1.0;
     transition: 1.0s;
+    
   }
 
   .artitem > a > img:hover {
     
-    opacity: 0.5;
+    opacity: 0.3;
+    
 
-    transition: 1.0s;
+    transition: 0.4s;
   }
 
   
