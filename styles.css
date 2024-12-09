@@ -27,6 +27,8 @@ body{
     background-attachment: fixed; /* Keeps the background fixed when scrolling */
 
     margin:auto;
+
+    padding-bottom:10vh;
     
     
 }
