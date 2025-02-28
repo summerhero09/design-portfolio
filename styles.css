@@ -268,6 +268,13 @@ NAVBAR
 
 
 }
+iframe {
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 560px; /* Prevent it from getting too large */
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain the correct aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+}
 
 
 
