@@ -556,7 +556,9 @@ img.example
     body{
       padding: 1.2vw;
       margin-bottom: 5vh;
+      background-attachment: fixed;
     }
+    
     .vid{
       width: 80vw;
       height: 100%;
