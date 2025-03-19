@@ -553,25 +553,34 @@ img.example
   
   
   @media (max-width: 480px) {
+    body{
+      padding: 1.2vw;
+      margin-bottom: 5vh;
+    }
+    .vid{
+      width: 80vw;
+      height: 100%;
+    }
     h1 {
-      font-size: 5.5vmin;
+      font-size: 7vmin;
     }
 
     h2 {
 
-      font-size: 4 vmin;
+      font-size: 6.5vmin;
 
     }
     
     .processlabel{
       font-size: 3.5vmin;
+      margin-top: -2vh;
     }
   
     .main{
       margin-inline: 1rem;
     }
     h3 {
-      font-size: 3.8vmin;
+      font-size: 6vmin;
     }
     p {
       font-size: 3.8vmin;
@@ -587,7 +596,7 @@ img.example
       font-size: 3.5vmin;
     }
     .section{
-      margin-inline: 1vw !important;
+      margin-inline: 3vw !important;
       
     }
 
