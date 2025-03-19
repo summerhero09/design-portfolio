@@ -24,7 +24,7 @@ body{
     background-size: cover; /* Scales the image to cover the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-attachment: fixed !important;/* Keeps the background fixed when scrolling */
 
     margin:auto;
 
@@ -556,7 +556,7 @@ img.example
     body{
       padding: 1.2vw;
       margin-bottom: 5vh;
-      background-attachment: fixed;
+      background-attachment: fixed !important;
     }
     
     .vid{
