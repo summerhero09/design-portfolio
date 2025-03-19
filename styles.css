@@ -616,7 +616,7 @@ img.example
     height: auto;
     object-fit: contain;
       
-      min-width: 400px !important; /* Set a minimum width to avoid becoming too small */
+      min-width: 360px !important; /* Set a minimum width to avoid becoming too small */
     }
    
       
