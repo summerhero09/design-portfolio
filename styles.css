@@ -480,6 +480,7 @@ img.example
   body{
     background-image:none;
       background: linear-gradient(#05234a, #016190);
+      background-attachment: fixed;
   }
 
     h1, h2 {
