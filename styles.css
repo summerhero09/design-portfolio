@@ -101,7 +101,7 @@ ul{
   color: white;
   margin-block:3vh;
   margin-inline:5vw;
-  list-style-position: inside;
+  list-style-position: outside;
   
 }
 li{
@@ -348,11 +348,12 @@ iframe {
 
 .label{
 
+    text-align:center;
     display: inline-block;
     padding-inline: 1vmin;
     
     border-radius: 25px;
-    font-size:3vmin;
+    font-size:2.5vmin;
 
 
 }
@@ -475,6 +476,12 @@ img.example
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
+
+  body{
+    background-image:none;
+      background: linear-gradient(#05234a, #016190);
+  }
+
     h1, h2 {
       font-size: 5.5vmin;
     }
@@ -508,7 +515,8 @@ img.example
       
       
     }
-    .li{
+    
+    li{
       text-align: left;
     }
     .section img{
@@ -532,7 +540,7 @@ img.example
   }
   
   @media (max-width: 768px) {
- 
+
     .main{
       flex-direction: column;
       margin-inline: 2rem;
@@ -554,6 +562,7 @@ img.example
   
   @media (max-width: 480px) {
     body{
+      
       padding: 1.2vw;
       margin-bottom: 5vh;
       background-attachment: fixed !important;
